@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -19,6 +19,7 @@
 		8F2C715C2343B70700A6CB48 /* happy_lamb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F2C71572343B70700A6CB48 /* happy_lamb.jpg */; };
 		8F2C715D2343B70700A6CB48 /* dog_img.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F2C71582343B70700A6CB48 /* dog_img.jpg */; };
 		8F2C715E2343B70700A6CB48 /* cat.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F2C71592343B70700A6CB48 /* cat.jpg */; };
+		8F48C34A234514D00057E19B /* UIImage+getAverageColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F48C349234514D00057E19B /* UIImage+getAverageColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		8F2C71572343B70700A6CB48 /* happy_lamb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = happy_lamb.jpg; path = "../../../../Downloads/Random Photo/Random Photo/happy_lamb.jpg"; sourceTree = "<group>"; };
 		8F2C71582343B70700A6CB48 /* dog_img.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = dog_img.jpg; path = "../../../../Downloads/Random Photo/Random Photo/dog_img.jpg"; sourceTree = "<group>"; };
 		8F2C71592343B70700A6CB48 /* cat.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = cat.jpg; path = "../../../../Downloads/Random Photo/Random Photo/cat.jpg"; sourceTree = "<group>"; };
+		8F48C349234514D00057E19B /* UIImage+getAverageColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+getAverageColor.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 		8F2C713E2343A84E00A6CB48 /* stant-album */ = {
 			isa = PBXGroup;
 			children = (
+				8F48C349234514D00057E19B /* UIImage+getAverageColor.swift */,
 				8F2C71562343B70700A6CB48 /* birds.jpg */,
 				8F2C71592343B70700A6CB48 /* cat.jpg */,
 				8F2C71582343B70700A6CB48 /* dog_img.jpg */,
@@ -161,6 +164,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F48C34A234514D00057E19B /* UIImage+getAverageColor.swift in Sources */,
 				8F2C71422343A84E00A6CB48 /* ViewController.swift in Sources */,
 				8F2C71402343A84E00A6CB48 /* AppDelegate.swift in Sources */,
 				8F2C71522343B3D200A6CB48 /* Album.swift in Sources */,

@@ -15,22 +15,29 @@ class ViewController: UIViewController {
     @IBOutlet weak var recordLabel:         UILabel!
     @IBOutlet weak var newAlbumButton:      UIButton!
     
-    var albumGenerator = AlbumGenerator()
+    var albumGenerator            = AlbumGenerator()
+    let gradient: CAGradientLayer = CAGradientLayer()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.layer.insertSublayer(gradient, at: 0)
+        
+        albumNameLabel.textColor          = UIColor.white
+        albumNameLabel.font               = UIFont.boldSystemFont(ofSize: 25)
+        artistNameLabel.textColor         = UIColor.lightGray
+        recordLabel.textColor             = UIColor.lightGray
         
         newAlbumButton.setTitle("NEW ALBUM", for: .normal)
         newAlbumButton.tintColor          = UIColor.white
-        albumNameLabel.textColor          = UIColor.white
-        artistNameLabel.textColor         = UIColor.white
-        recordLabel.textColor             = UIColor.white
         newAlbumButton.titleLabel?.font   = UIFont.boldSystemFont(ofSize: 16)
         newAlbumButton.backgroundColor    = UIColor(red: 30/255, green: 215/255, blue: 96/255, alpha: 1.0)
         newAlbumButton.layer.cornerRadius = 22
         
-        
         getNewAlbum()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        gradient.frame = self.view.safeAreaLayoutGuide.layoutFrame
     }
 
     @IBAction func getNewAlbumAction(_ sender: Any) {
@@ -63,16 +70,8 @@ class ViewController: UIViewController {
     }
     
     func setBackground(_ image: UIImage) {
-        let imageView             = UIImageView(image: image)
-        imageView.frame           = view.bounds
-        imageView.contentMode     = .scaleToFill
-        imageView.layer.zPosition = -1
-        view.addSubview(imageView)
-        
-        let blurEffect          = UIBlurEffect(style: .dark)
-        let blurredEffectView   = UIVisualEffectView(effect: blurEffect)
-        blurredEffectView.frame = imageView.bounds
-        imageView.addSubview(blurredEffectView)
-        
+        let bgColor        = image.getAverageColor()
+        gradient.colors    = [bgColor.cgColor, UIColor.black.cgColor]
+        gradient.locations = [0, 1]
     }
 }
