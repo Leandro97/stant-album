@@ -21,6 +21,7 @@
 		8F2C715E2343B70700A6CB48 /* cat.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F2C71592343B70700A6CB48 /* cat.jpg */; };
 		8F48C34A234514D00057E19B /* UIImage+getAverageColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F48C349234514D00057E19B /* UIImage+getAverageColor.swift */; };
 		8F48C34C23453E9C0057E19B /* SpinnerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F48C34B23453E9C0057E19B /* SpinnerViewController.swift */; };
+		8F48C35023454DE70057E19B /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F48C34F23454DE70057E19B /* Request.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		8F2C71592343B70700A6CB48 /* cat.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = cat.jpg; path = "../../../../Downloads/Random Photo/Random Photo/cat.jpg"; sourceTree = "<group>"; };
 		8F48C349234514D00057E19B /* UIImage+getAverageColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+getAverageColor.swift"; sourceTree = "<group>"; };
 		8F48C34B23453E9C0057E19B /* SpinnerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinnerViewController.swift; sourceTree = "<group>"; };
+		8F48C34F23454DE70057E19B /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,21 +74,22 @@
 		8F2C713E2343A84E00A6CB48 /* stant-album */ = {
 			isa = PBXGroup;
 			children = (
-				8F48C349234514D00057E19B /* UIImage+getAverageColor.swift */,
 				8F2C71562343B70700A6CB48 /* birds.jpg */,
 				8F2C71592343B70700A6CB48 /* cat.jpg */,
 				8F2C71582343B70700A6CB48 /* dog_img.jpg */,
 				8F2C71572343B70700A6CB48 /* happy_lamb.jpg */,
 				8F2C71552343B70700A6CB48 /* road_image.jpg */,
-				8F2C713F2343A84E00A6CB48 /* AppDelegate.swift */,
-				8F2C71412343A84E00A6CB48 /* ViewController.swift */,
-				8F48C34B23453E9C0057E19B /* SpinnerViewController.swift */,
-				8F2C71432343A84E00A6CB48 /* Main.storyboard */,
+				8F2C714B2343A84F00A6CB48 /* Info.plist */,
 				8F2C71512343B3D200A6CB48 /* Album.swift */,
 				8F2C71532343B4A200A6CB48 /* AlbumGenerator.swift */,
+				8F2C713F2343A84E00A6CB48 /* AppDelegate.swift */,
+				8F48C34F23454DE70057E19B /* Request.swift */,
+				8F48C34B23453E9C0057E19B /* SpinnerViewController.swift */,
+				8F48C349234514D00057E19B /* UIImage+getAverageColor.swift */,
+				8F2C71412343A84E00A6CB48 /* ViewController.swift */,
 				8F2C71462343A84F00A6CB48 /* Assets.xcassets */,
 				8F2C71482343A84F00A6CB48 /* LaunchScreen.storyboard */,
-				8F2C714B2343A84F00A6CB48 /* Info.plist */,
+				8F2C71432343A84E00A6CB48 /* Main.storyboard */,
 			);
 			path = "stant-album";
 			sourceTree = "<group>";
@@ -171,6 +174,7 @@
 				8F2C71422343A84E00A6CB48 /* ViewController.swift in Sources */,
 				8F2C71402343A84E00A6CB48 /* AppDelegate.swift in Sources */,
 				8F2C71522343B3D200A6CB48 /* Album.swift in Sources */,
+				8F48C35023454DE70057E19B /* Request.swift in Sources */,
 				8F48C34C23453E9C0057E19B /* SpinnerViewController.swift in Sources */,
 				8F2C71542343B4A200A6CB48 /* AlbumGenerator.swift in Sources */,
 			);
