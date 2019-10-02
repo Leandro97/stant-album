@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -20,6 +20,7 @@
 		8F2C715D2343B70700A6CB48 /* dog_img.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F2C71582343B70700A6CB48 /* dog_img.jpg */; };
 		8F2C715E2343B70700A6CB48 /* cat.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F2C71592343B70700A6CB48 /* cat.jpg */; };
 		8F48C34A234514D00057E19B /* UIImage+getAverageColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F48C349234514D00057E19B /* UIImage+getAverageColor.swift */; };
+		8F48C34C23453E9C0057E19B /* SpinnerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F48C34B23453E9C0057E19B /* SpinnerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		8F2C71582343B70700A6CB48 /* dog_img.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = dog_img.jpg; path = "../../../../Downloads/Random Photo/Random Photo/dog_img.jpg"; sourceTree = "<group>"; };
 		8F2C71592343B70700A6CB48 /* cat.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = cat.jpg; path = "../../../../Downloads/Random Photo/Random Photo/cat.jpg"; sourceTree = "<group>"; };
 		8F48C349234514D00057E19B /* UIImage+getAverageColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+getAverageColor.swift"; sourceTree = "<group>"; };
+		8F48C34B23453E9C0057E19B /* SpinnerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinnerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 				8F2C71552343B70700A6CB48 /* road_image.jpg */,
 				8F2C713F2343A84E00A6CB48 /* AppDelegate.swift */,
 				8F2C71412343A84E00A6CB48 /* ViewController.swift */,
+				8F48C34B23453E9C0057E19B /* SpinnerViewController.swift */,
 				8F2C71432343A84E00A6CB48 /* Main.storyboard */,
 				8F2C71512343B3D200A6CB48 /* Album.swift */,
 				8F2C71532343B4A200A6CB48 /* AlbumGenerator.swift */,
@@ -168,6 +171,7 @@
 				8F2C71422343A84E00A6CB48 /* ViewController.swift in Sources */,
 				8F2C71402343A84E00A6CB48 /* AppDelegate.swift in Sources */,
 				8F2C71522343B3D200A6CB48 /* Album.swift in Sources */,
+				8F48C34C23453E9C0057E19B /* SpinnerViewController.swift in Sources */,
 				8F2C71542343B4A200A6CB48 /* AlbumGenerator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
