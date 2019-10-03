@@ -11,14 +11,12 @@ import Foundation
 import Foundation
 let session = URLSession(configuration: .default)
 
-//Error tratement needed
 func makeRequest(getFromURL: String, requestCompletionHandler: @escaping (Data?, Error?) -> Void){
     if let url = URL(string: getFromURL) {
         session.dataTask(with: url) { (data, response, error) in
-            if let responseData = data {
-                requestCompletionHandler(responseData, nil)
-            }
+            requestCompletionHandler(data, error)
             }.resume()
     }
 }
+
 
