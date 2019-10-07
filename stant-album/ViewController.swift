@@ -27,16 +27,16 @@ class ViewController: UIViewController {
     }
     
     func getNewAlbum() {
-        let albumIndex = Int.random(in: 0..<albumGenerator.albumList.count)
+        let albumIndex      = Int.random(in: 0..<albumGenerator.albumList.count)
         let newAlbum: Album = albumGenerator.albumList[albumIndex]
         self.updateFields(newAlbum)
     }
     
     func updateFields(_ album: Album) {
-        self.albumCoverImageView.image = UIImage(named: album.albumCover!)
-        self.albumNameLabel.text = album.albumName!
-        self.artistNameLabel.text = album.artistName!
-        self.recordLabel.text = album.recordLabel!
+        self.albumCoverImageView.image = UIImage(named: album.albumCover ?? "")
+        self.albumNameLabel.text       = album.albumName ?? ""
+        self.artistNameLabel.text      = album.artistName ?? ""
+        self.recordLabel.text          = album.recordLabel ?? ""
     }
     
 }
