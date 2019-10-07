@@ -43,7 +43,7 @@ class ViewController: UIViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        gradient.frame      = self.view.safeAreaLayoutGuide.layoutFrame
+        gradient.frame   = self.view.safeAreaLayoutGuide.layoutFrame
         child.view.frame = self.view.safeAreaLayoutGuide.layoutFrame
     }
 
