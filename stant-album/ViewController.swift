@@ -58,6 +58,28 @@ class ViewController: UIViewController {
     }
     
     func updateFields(_ album: Album) {
+        view.addSubview(child.view)
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+            self.child.view.removeFromSuperview()
+            
+            self.albumNameLabel.text  = album.albumName ?? ""
+            self.artistNameLabel.text = album.artistName ?? ""
+            self.recordLabel.text     = album.recordLabel ?? ""
+            let image                 = UIImage(named: album.albumCover ?? "")
+            
+            self.setCover(image!)
+            self.setBackground(image!)
+        }
+    }
+    
+    func setCover(_ image: UIImage) {
+        self.albumCoverImageView.contentMode         = .scaleToFill
+        self.albumCoverImageView.image               = image
+        self.albumCoverImageView.layer.shadowPath    = UIBezierPath(rect: self.albumCoverImageView.bounds).cgPath
+        self.albumCoverImageView.layer.shadowRadius  = 10
+        self.albumCoverImageView.layer.shadowOffset  = .zero
+        self.albumCoverImageView.layer.shadowOpacity = 1
     }
     
     func setBackground(_ image: UIImage) {
