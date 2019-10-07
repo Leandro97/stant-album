@@ -16,8 +16,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var newAlbumButton:      UIButton!
     
     var image                     = UIImage()
-    let loadSpinner                     = SpinnerViewController()
+    let loadSpinner               = SpinnerViewController()
     let gradient: CAGradientLayer = CAGradientLayer()
+    let apiURL = "https://fakerapiexample.herokuapp.com/album"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,7 +44,7 @@ class ViewController: UIViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        gradient.frame = self.view.safeAreaLayoutGuide.layoutFrame
+        gradient.frame         = self.view.safeAreaLayoutGuide.layoutFrame
         loadSpinner.view.frame = self.view.safeAreaLayoutGuide.layoutFrame
     }
 
@@ -51,25 +52,14 @@ class ViewController: UIViewController {
         self.getNewAlbum()
     }
     
-    func makeAlert(errorTitle: String, errorMessage: String) {
+    func showAlert(errorTitle: String, errorMessage: String) {
         let alert = UIAlertController(title: errorTitle, message: errorMessage, preferredStyle: UIAlertController.Style.alert)
         alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
         self.present(alert, animated: true, completion: nil)
     }
     
     func getNewAlbum() {
-        makeRequest(getFromURL: "https://fakerapiexample.herokuapp.com/album", requestCompletionHandler: { data, error in
-            if let responseData = data {
-                do {
-                    let decodedData = try JSONDecoder().decode(Album.self, from: responseData)
-                    self.updateFields(album: decodedData)
-                } catch {
-                    self.makeAlert(errorTitle: "Server could not be reached", errorMessage: "")
-                }
-            } else {
-                self.makeAlert(errorTitle: "No Internet", errorMessage: "Make sure you are connected.")
-            }
-        })
+        mapAlbum(url: apiURL, view: self)
     }
     
     func updateFields(album: Album) {
