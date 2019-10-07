@@ -1,5 +1,5 @@
 //
-//  Request.swift
+//  AlbumRequest.swift
 //  stant-album
 //
 //  Created by Leandro Martins on 02/10/19.
@@ -11,7 +11,6 @@ import Foundation
 import Foundation
 let session = URLSession(configuration: .default)
 
-//Error tratement needed
 func makeRequest(getFromURL: String, requestCompletionHandler: @escaping (Data?, Error?) -> Void){
     if let url = URL(string: getFromURL) {
         session.dataTask(with: url) { (data, response, error) in
