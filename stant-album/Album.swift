@@ -9,10 +9,10 @@
 import Foundation
 
 struct Album: Codable {
-    var id:          String?
-    var artistName:  String?
-    var recordLabel: String?
-    var albumName:   String?
+    let id:          String?
+    let artistName:  String?
+    let recordLabel: String?
+    let albumName:   String?
     let albumCover:  String?
     
     enum CodingKeys: String, CodingKey {
