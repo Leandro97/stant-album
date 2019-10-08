@@ -69,6 +69,7 @@
 				8F48C34F23454DE70057E19B /* AlbumRequest.swift */,
 				8F48C34B23453E9C0057E19B /* SpinnerViewController.swift */,
 				8F2C71412343A84E00A6CB48 /* ViewController.swift */,
+				8F2C71432343A84E00A6CB48 /* Main.storyboard */,
 				8F2C71462343A84F00A6CB48 /* Assets.xcassets */,
 				8F2C71482343A84F00A6CB48 /* LaunchScreen.storyboard */,
 				8F2C71432343A84E00A6CB48 /* Main.storyboard */,
@@ -299,7 +300,6 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = SWAFF648KE;
 				INFOPLIST_FILE = "stant-album/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -317,7 +317,6 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = SWAFF648KE;
 				INFOPLIST_FILE = "stant-album/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

@@ -69,10 +69,10 @@
                     </view>
                     <connections>
                         <outlet property="albumCoverImageView" destination="REc-3C-Gz5" id="CRU-V6-Xmi"/>
-                        <outlet property="albumNameLabel" destination="mfi-E7-BwN" id="ViE-kP-irz"/>
-                        <outlet property="artistNameLabel" destination="BWh-JJ-bXr" id="KxP-eT-bz5"/>
-                        <outlet property="newAlbumButton" destination="MWN-uW-WMF" id="2Oo-oX-1XW"/>
-                        <outlet property="recordLabel" destination="12Q-tw-WcV" id="yuM-Na-LHw"/>
+                        <outlet property="albumNameLabel" destination="mfi-E7-BwN" id="h6R-jA-wOE"/>
+                        <outlet property="artistNameLabel" destination="BWh-JJ-bXr" id="IUg-mQ-xRS"/>
+                        <outlet property="newAlbumButton" destination="MWN-uW-WMF" id="Xyi-Zn-Rue"/>
+                        <outlet property="recordLabel" destination="12Q-tw-WcV" id="Ufh-rx-E4h"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
