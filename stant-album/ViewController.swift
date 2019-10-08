@@ -69,9 +69,9 @@ class ViewController: UIViewController {
         
         makeRequest(getFromURL: album.albumCover!, requestCompletionHandler: { data, error in
             DispatchQueue.main.sync {
-                self.albumNameLabel.text  = album.albumName!
-                self.artistNameLabel.text = album.artistName!
-                self.recordLabel.text     = album.recordLabel!
+                self.albumNameLabel.text  = album.albumName ?? ""
+                self.artistNameLabel.text = album.artistName ?? ""
+                self.recordLabel.text     = album.recordLabel ?? ""
                 self.image                = UIImage(data: data!)!
                 
                 self.setCover(image: self.image)
