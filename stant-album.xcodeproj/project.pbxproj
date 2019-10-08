@@ -13,12 +13,6 @@
 		8F2C71472343A84F00A6CB48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F2C71462343A84F00A6CB48 /* Assets.xcassets */; };
 		8F2C714A2343A84F00A6CB48 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F2C71482343A84F00A6CB48 /* LaunchScreen.storyboard */; };
 		8F2C71522343B3D200A6CB48 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F2C71512343B3D200A6CB48 /* Album.swift */; };
-		8F2C71542343B4A200A6CB48 /* AlbumGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F2C71532343B4A200A6CB48 /* AlbumGenerator.swift */; };
-		8F2C715A2343B70700A6CB48 /* road_image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F2C71552343B70700A6CB48 /* road_image.jpg */; };
-		8F2C715B2343B70700A6CB48 /* birds.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F2C71562343B70700A6CB48 /* birds.jpg */; };
-		8F2C715C2343B70700A6CB48 /* happy_lamb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F2C71572343B70700A6CB48 /* happy_lamb.jpg */; };
-		8F2C715D2343B70700A6CB48 /* dog_img.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F2C71582343B70700A6CB48 /* dog_img.jpg */; };
-		8F2C715E2343B70700A6CB48 /* cat.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F2C71592343B70700A6CB48 /* cat.jpg */; };
 		8F48C34A234514D00057E19B /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F48C349234514D00057E19B /* UIImageExtension.swift */; };
 		8F48C34C23453E9C0057E19B /* SpinnerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F48C34B23453E9C0057E19B /* SpinnerViewController.swift */; };
 		8F48C35023454DE70057E19B /* AlbumRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F48C34F23454DE70057E19B /* AlbumRequest.swift */; };
@@ -33,12 +27,6 @@
 		8F2C71492343A84F00A6CB48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8F2C714B2343A84F00A6CB48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8F2C71512343B3D200A6CB48 /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
-		8F2C71532343B4A200A6CB48 /* AlbumGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumGenerator.swift; sourceTree = "<group>"; };
-		8F2C71552343B70700A6CB48 /* road_image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = road_image.jpg; path = "../../../../Downloads/Random Photo/Random Photo/road_image.jpg"; sourceTree = "<group>"; };
-		8F2C71562343B70700A6CB48 /* birds.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = birds.jpg; path = "../../../../Downloads/Random Photo/Random Photo/birds.jpg"; sourceTree = "<group>"; };
-		8F2C71572343B70700A6CB48 /* happy_lamb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = happy_lamb.jpg; path = "../../../../Downloads/Random Photo/Random Photo/happy_lamb.jpg"; sourceTree = "<group>"; };
-		8F2C71582343B70700A6CB48 /* dog_img.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = dog_img.jpg; path = "../../../../Downloads/Random Photo/Random Photo/dog_img.jpg"; sourceTree = "<group>"; };
-		8F2C71592343B70700A6CB48 /* cat.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = cat.jpg; path = "../../../../Downloads/Random Photo/Random Photo/cat.jpg"; sourceTree = "<group>"; };
 		8F48C349234514D00057E19B /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
 		8F48C34B23453E9C0057E19B /* SpinnerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinnerViewController.swift; sourceTree = "<group>"; };
 		8F48C34F23454DE70057E19B /* AlbumRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumRequest.swift; sourceTree = "<group>"; };
@@ -75,18 +63,11 @@
 			isa = PBXGroup;
 			children = (
 				8F48C349234514D00057E19B /* UIImageExtension.swift */,
-				8F2C71562343B70700A6CB48 /* birds.jpg */,
-				8F2C71592343B70700A6CB48 /* cat.jpg */,
-				8F2C71582343B70700A6CB48 /* dog_img.jpg */,
-				8F2C71572343B70700A6CB48 /* happy_lamb.jpg */,
-				8F2C71552343B70700A6CB48 /* road_image.jpg */,
 				8F2C714B2343A84F00A6CB48 /* Info.plist */,
 				8F2C71512343B3D200A6CB48 /* Album.swift */,
-				8F2C71532343B4A200A6CB48 /* AlbumGenerator.swift */,
 				8F2C713F2343A84E00A6CB48 /* AppDelegate.swift */,
 				8F48C34F23454DE70057E19B /* AlbumRequest.swift */,
 				8F48C34B23453E9C0057E19B /* SpinnerViewController.swift */,
-				8F48C349234514D00057E19B /* UIImage+getAverageColor.swift */,
 				8F2C71412343A84E00A6CB48 /* ViewController.swift */,
 				8F2C71462343A84F00A6CB48 /* Assets.xcassets */,
 				8F2C71482343A84F00A6CB48 /* LaunchScreen.storyboard */,
@@ -153,13 +134,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8F2C715D2343B70700A6CB48 /* dog_img.jpg in Resources */,
-				8F2C715C2343B70700A6CB48 /* happy_lamb.jpg in Resources */,
 				8F2C714A2343A84F00A6CB48 /* LaunchScreen.storyboard in Resources */,
-				8F2C715A2343B70700A6CB48 /* road_image.jpg in Resources */,
 				8F2C71472343A84F00A6CB48 /* Assets.xcassets in Resources */,
-				8F2C715B2343B70700A6CB48 /* birds.jpg in Resources */,
-				8F2C715E2343B70700A6CB48 /* cat.jpg in Resources */,
 				8F2C71452343A84E00A6CB48 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -177,7 +153,6 @@
 				8F2C71522343B3D200A6CB48 /* Album.swift in Sources */,
 				8F48C35023454DE70057E19B /* AlbumRequest.swift in Sources */,
 				8F48C34C23453E9C0057E19B /* SpinnerViewController.swift in Sources */,
-				8F2C71542343B4A200A6CB48 /* AlbumGenerator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
