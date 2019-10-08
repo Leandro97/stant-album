@@ -12,6 +12,10 @@
 		8F2C71452343A84E00A6CB48 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F2C71432343A84E00A6CB48 /* Main.storyboard */; };
 		8F2C71472343A84F00A6CB48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F2C71462343A84F00A6CB48 /* Assets.xcassets */; };
 		8F2C714A2343A84F00A6CB48 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F2C71482343A84F00A6CB48 /* LaunchScreen.storyboard */; };
+		8F2C71522343B3D200A6CB48 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F2C71512343B3D200A6CB48 /* Album.swift */; };
+		8F48C34A234514D00057E19B /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F48C349234514D00057E19B /* UIImageExtension.swift */; };
+		8F48C34C23453E9C0057E19B /* SpinnerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F48C34B23453E9C0057E19B /* SpinnerViewController.swift */; };
+		8F48C35023454DE70057E19B /* AlbumRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F48C34F23454DE70057E19B /* AlbumRequest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		8F2C71462343A84F00A6CB48 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8F2C71492343A84F00A6CB48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8F2C714B2343A84F00A6CB48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F2C71512343B3D200A6CB48 /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
+		8F48C349234514D00057E19B /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
+		8F48C34B23453E9C0057E19B /* SpinnerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinnerViewController.swift; sourceTree = "<group>"; };
+		8F48C34F23454DE70057E19B /* AlbumRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumRequest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,12 +62,17 @@
 		8F2C713E2343A84E00A6CB48 /* stant-album */ = {
 			isa = PBXGroup;
 			children = (
+				8F48C349234514D00057E19B /* UIImageExtension.swift */,
+				8F2C714B2343A84F00A6CB48 /* Info.plist */,
+				8F2C71512343B3D200A6CB48 /* Album.swift */,
 				8F2C713F2343A84E00A6CB48 /* AppDelegate.swift */,
+				8F48C34F23454DE70057E19B /* AlbumRequest.swift */,
+				8F48C34B23453E9C0057E19B /* SpinnerViewController.swift */,
 				8F2C71412343A84E00A6CB48 /* ViewController.swift */,
 				8F2C71432343A84E00A6CB48 /* Main.storyboard */,
 				8F2C71462343A84F00A6CB48 /* Assets.xcassets */,
 				8F2C71482343A84F00A6CB48 /* LaunchScreen.storyboard */,
-				8F2C714B2343A84F00A6CB48 /* Info.plist */,
+				8F2C71432343A84E00A6CB48 /* Main.storyboard */,
 			);
 			path = "stant-album";
 			sourceTree = "<group>";
@@ -135,8 +148,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F48C34A234514D00057E19B /* UIImageExtension.swift in Sources */,
 				8F2C71422343A84E00A6CB48 /* ViewController.swift in Sources */,
 				8F2C71402343A84E00A6CB48 /* AppDelegate.swift in Sources */,
+				8F2C71522343B3D200A6CB48 /* Album.swift in Sources */,
+				8F48C35023454DE70057E19B /* AlbumRequest.swift in Sources */,
+				8F48C34C23453E9C0057E19B /* SpinnerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
