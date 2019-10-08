@@ -1,5 +1,5 @@
 //
-//  Request.swift
+//  AlbumRequest.swift
 //  stant-album
 //
 //  Created by Leandro Martins on 02/10/19.

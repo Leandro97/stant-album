@@ -28,7 +28,7 @@ struct Album: Codable {
          recordLabel: String,
          albumName:   String,
          albumCover:  String) {
-        self.id = id
+        self.id          = id
         self.artistName  = artistName
         self.recordLabel = recordLabel
         self.albumName   = albumName

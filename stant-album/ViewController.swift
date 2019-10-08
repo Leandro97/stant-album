@@ -24,15 +24,15 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         self.view.layer.insertSublayer(gradient, at: 0)
         
-        albumNameLabel.textColor          = UIColor.white
-        albumNameLabel.font               = UIFont.boldSystemFont(ofSize: 25)
-        albumNameLabel.text               = ""
+        albumNameLabel.textColor = UIColor.white
+        albumNameLabel.font      = UIFont.boldSystemFont(ofSize: 25)
+        albumNameLabel.text      = ""
         
-        artistNameLabel.textColor         = UIColor.lightGray
-        artistNameLabel.text              = ""
+        artistNameLabel.textColor = UIColor.lightGray
+        artistNameLabel.text      = ""
         
-        recordLabel.textColor             = UIColor.lightGray
-        recordLabel.text                  = ""
+        recordLabel.textColor = UIColor.lightGray
+        recordLabel.text      = ""
         
         newAlbumButton.setTitle("NEW ALBUM", for: .normal)
         newAlbumButton.tintColor          = UIColor.white
