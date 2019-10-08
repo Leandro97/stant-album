@@ -15,9 +15,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var recordLabel:         UILabel!
     @IBOutlet weak var newAlbumButton:      UIButton!
     
-    var albumGenerator            = AlbumGenerator()
-    let child                     = SpinnerViewController()
+    var image                     = UIImage()
+    let loadSpinner               = SpinnerViewController()
     let gradient: CAGradientLayer = CAGradientLayer()
+    let apiURL = "https://fakerapiexample.herokuapp.com/album"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,46 +44,53 @@ class ViewController: UIViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        gradient.frame   = self.view.safeAreaLayoutGuide.layoutFrame
-        child.view.frame = self.view.safeAreaLayoutGuide.layoutFrame
+        gradient.frame         = self.view.safeAreaLayoutGuide.layoutFrame
+        loadSpinner.view.frame = self.view.safeAreaLayoutGuide.layoutFrame
     }
 
     @IBAction func getNewAlbumAction(_ sender: Any) {
         self.getNewAlbum()
     }
     
+    func showAlert(errorTitle: String, errorMessage: String) {
+        let alert = UIAlertController(title: errorTitle, message: errorMessage, preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
+    }
+    
     func getNewAlbum() {
-        let albumIndex      = Int.random(in: 0..<albumGenerator.albumList.count)
-        let newAlbum: Album = albumGenerator.albumList[albumIndex]
-        self.updateFields(newAlbum)
+        mapAlbum(url: apiURL, view: self)
     }
     
-    func updateFields(_ album: Album) {
-        view.addSubview(child.view)
-        
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-            self.child.view.removeFromSuperview()
-            
-            self.albumNameLabel.text  = album.albumName ?? ""
-            self.artistNameLabel.text = album.artistName ?? ""
-            self.recordLabel.text     = album.recordLabel ?? ""
-            let image                 = UIImage(named: album.albumCover ?? "")
-            
-            self.setCover(image!)
-            self.setBackground(image!)
+    func updateFields(album: Album) {
+        DispatchQueue.main.sync {
+            view.addSubview(loadSpinner.view)
         }
+        
+        makeRequest(getFromURL: album.albumCover!, requestCompletionHandler: { data, error in
+            DispatchQueue.main.sync {
+                self.albumNameLabel.text  = album.albumName!
+                self.artistNameLabel.text = album.artistName!
+                self.recordLabel.text     = album.recordLabel!
+                self.image                = UIImage(data: data!)!
+                
+                self.setCover(image: self.image)
+                self.setBackground(image: self.image)
+                self.loadSpinner.view.removeFromSuperview()
+            }
+        })
     }
     
-    func setCover(_ image: UIImage) {
+    func setCover(image: UIImage) {
+        self.albumCoverImageView.image               = self.image
         self.albumCoverImageView.contentMode         = .scaleToFill
-        self.albumCoverImageView.image               = image
         self.albumCoverImageView.layer.shadowPath    = UIBezierPath(rect: self.albumCoverImageView.bounds).cgPath
         self.albumCoverImageView.layer.shadowRadius  = 10
         self.albumCoverImageView.layer.shadowOffset  = .zero
         self.albumCoverImageView.layer.shadowOpacity = 1
     }
     
-    func setBackground(_ image: UIImage) {
+    func setBackground(image: UIImage) {
         let bgColor        = image.getAverageColor()
         gradient.colors    = [bgColor.cgColor, UIColor.black.cgColor]
         gradient.locations = [0, 1]
