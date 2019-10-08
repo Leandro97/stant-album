@@ -16,22 +16,22 @@ class ViewController: UIViewController {
     @IBOutlet weak var newAlbumButton:      UIButton!
     
     var albumGenerator            = AlbumGenerator()
-    let child = SpinnerViewController()
+    let child                     = SpinnerViewController()
     let gradient: CAGradientLayer = CAGradientLayer()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.layer.insertSublayer(gradient, at: 0)
         
-        albumNameLabel.textColor          = UIColor.white
-        albumNameLabel.font               = UIFont.boldSystemFont(ofSize: 25)
-        albumNameLabel.text               = ""
+        albumNameLabel.textColor = UIColor.white
+        albumNameLabel.font      = UIFont.boldSystemFont(ofSize: 25)
+        albumNameLabel.text      = ""
         
-        artistNameLabel.textColor         = UIColor.lightGray
-        artistNameLabel.text              = ""
+        artistNameLabel.textColor = UIColor.lightGray
+        artistNameLabel.text      = ""
         
-        recordLabel.textColor             = UIColor.lightGray
-        recordLabel.text                  = ""
+        recordLabel.textColor = UIColor.lightGray
+        recordLabel.text      = ""
         
         newAlbumButton.setTitle("NEW ALBUM", for: .normal)
         newAlbumButton.tintColor          = UIColor.white
@@ -43,7 +43,7 @@ class ViewController: UIViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        gradient.frame = self.view.safeAreaLayoutGuide.layoutFrame
+        gradient.frame   = self.view.safeAreaLayoutGuide.layoutFrame
         child.view.frame = self.view.safeAreaLayoutGuide.layoutFrame
     }
 
@@ -60,14 +60,13 @@ class ViewController: UIViewController {
     func updateFields(_ album: Album) {
         view.addSubview(child.view)
         
-        //Simulating 1 second delay
         DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
             self.child.view.removeFromSuperview()
             
-            self.albumNameLabel.text  = album.albumName!
-            self.artistNameLabel.text = album.artistName!
-            self.recordLabel.text     = album.recordLabel!
-            let image                 = UIImage(named: album.albumCover!)
+            self.albumNameLabel.text  = album.albumName ?? ""
+            self.artistNameLabel.text = album.artistName ?? ""
+            self.recordLabel.text     = album.recordLabel ?? ""
+            let image                 = UIImage(named: album.albumCover ?? "")
             
             self.setCover(image!)
             self.setBackground(image!)
